@@ -1,68 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kursus IT - Kecoding</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link href="style.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
-        </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kecoding</title>
+  <link href="styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div class="doto">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark " data-bs-theme="dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">
-                <img src="logo.png" alt="Bootstrap" width="50" height="50">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="frontend.html">Learning Path</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Langganan</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Program</a>
-                  </li>
-                  <li class="nav-item dropdown " >
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Lainnya
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  
-                </ul>
-                
-              </div>
+<body class="font">
+  <!-- Header -->
+
+      <!-- Logo -->
+
+  
+      <!-- Navigation Links -->
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto"  href="#">Kecoding</a>
+          
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-          </nav>
-    </div>
-    <div style="margin-top: 82px;">
-        <div class="container text-center">
-            <div class="row align-items-start">
-              <div class="col-12 col-lg-5 col-md-7">
-                <h2 class="mb-3 font-weight-500" style="text-align: left;">Bangun Karirmu Sebagai Developer Profesional</h2>
-                <p class="" style="text-align: left;">Mulai Belajar terarah dengan learning path</p>
-                <button type="button" class="btn btn-primary">Mulai Belajar</button>
-              </div>
-              <div class="col-12 col-lg-7 col-md-7">
-                <img src="kiles-removebg-preview.png" width="500" height="370" style="display: block;">
-              </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#course">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#">Service</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#">Portofolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#">Contact</a>
+                </li>
+              </ul>
             </div>
           </div>
+          <a href="#" class="login-button">Login</a>
+          <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+  
+
+  
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container d-flex align-items-center justify-content-center fx-1 text-white flex-column">
+      <h1> KursusIT</h1>
+      <h2> Frontend & Backend</h2>
+      <a class="btn btn-primary" href="#course" role="button">Gass Belajar</a>
     </div>
-    
+  </section>
+
+  <!-- Courses Section -->
+  <course class="course" id="course">
+    <div class="container d-flex align-items-center justify-content-center fx-1 text-black flex-column">
+      <h1>Learning Path</h1>
+      <p> Learning path akan membantu Anda dalam belajar di Academy dengan kurikulum yang dibangun bersama pelaku industri ternama.</p>
+      <div class="row justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="btn card shadow-sm">
+            <img src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/commons/homepage-lp-front-end-web-developer-2.jpg" class="card-img-top" alt="Front-End">
+            <div class="card-body" >
+              <h5 class="card-title">Front-End Development</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="btn card shadow-sm">
+            <img src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/commons/homepage-lp-back-end-developer-2.jpg" class="card-img-top" alt="Back-End">
+            <div class="card-body">
+              <h5 class="card-title">Back-End Development</h5>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Row with 3 Cards -->
+  </div>
+  </course>
+  <!-- About Section -->
+
+
+  <!-- Contact Section -->
+
+
+  <!-- Footer -->
+
 </body>
 </html>
